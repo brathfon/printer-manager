@@ -1,0 +1,656 @@
+1,2c1,2
+< PRINTER_MONITOR_DIRECTORY is not defined.  Using default of /Volumes/media1/testData/printermonitor-20160824/results
+< PRINTER_MONITOR_INFO_FILE is not defined.  Using default of /Volumes/media1/testData/printermonitor-20160824/printerInfo.txt
+---
+> Setting ourPrinterMonitorDirectory to /Volumes/media1/testData/printermonitor-20170201/results
+> Setting ourPrinterMonitorInfoFile to /Volumes/media1/testData/printermonitor-20170201/printerInfo.txt
+26d25
+< Do not know how to parse the file for a : Ricoh-C252SF
+27a27
+> Do not know how to parse the file for a : Ricoh-SP3600N
+33a34
+> Do not know how to parse the file for a : Ricoh-SP3600N
+38c39
+<     statusDate: '2016-08-24',
+---
+>     statusDate: '2017-02-01',
+41,42c42,43
+<          nativeValue: 'Remaining Level 3',
+<          percentUsed: 60 },
+---
+>          nativeValue: 'Remaining Level 4',
+>          percentFull: 80 },
+44,45c45,46
+<          nativeValue: 'Remaining Level 5',
+<          percentUsed: 100 },
+---
+>          nativeValue: 'Remaining Level 4',
+>          percentFull: 80 },
+47,48c48,49
+<          nativeValue: 'Remaining Level 5',
+<          percentUsed: 100 },
+---
+>          nativeValue: 'Remaining Level 3',
+>          percentFull: 60 },
+50,51c51,52
+<          nativeValue: 'Remaining Level 5',
+<          percentUsed: 100 } ] },
+---
+>          nativeValue: 'Remaining Level 4',
+>          percentFull: 80 } ] },
+55,56c56,57
+<     printerModel: 'Ricoh-SPC252SF',
+<     statusDate: '2016-08-24',
+---
+>     printerModel: 'Ricoh-SPC242SF',
+>     statusDate: '2017-02-01',
+59,60c60,61
+<          nativeValue: 'Remaining Level 5',
+<          percentUsed: 100 },
+---
+>          nativeValue: 'Remaining Level 3',
+>          percentFull: 60 },
+63c64
+<          percentUsed: 100 },
+---
+>          percentFull: 100 },
+66c67
+<          percentUsed: 100 },
+---
+>          percentFull: 100 },
+68,69c69,70
+<          nativeValue: 'Remaining Level 5',
+<          percentUsed: 100 } ] },
+---
+>          nativeValue: 'Remaining Level 4',
+>          percentFull: 80 } ] },
+74c75
+<     statusDate: '2016-08-24',
+---
+>     statusDate: '2017-02-01',
+78c79
+<          percentUsed: 80 } ] },
+---
+>          percentFull: 80 } ] },
+83c84
+<     statusDate: '2016-08-24',
+---
+>     statusDate: '2017-02-01',
+86,87c87,88
+<          nativeValue: 'Remaining Level 4',
+<          percentUsed: 80 },
+---
+>          nativeValue: 'Remaining Level 5',
+>          percentFull: 100 },
+89,90c90,91
+<          nativeValue: 'Remaining Level 4',
+<          percentUsed: 80 },
+---
+>          nativeValue: 'Remaining Level 5',
+>          percentFull: 100 },
+92,93c93,94
+<          nativeValue: 'Remaining Level 3',
+<          percentUsed: 60 },
+---
+>          nativeValue: 'Remaining Level 5',
+>          percentFull: 100 },
+95,96c96,97
+<          nativeValue: 'Remaining Level 4',
+<          percentUsed: 80 } ] },
+---
+>          nativeValue: 'Remaining Level 5',
+>          percentFull: 100 } ] },
+101c102
+<     statusDate: '2016-08-24',
+---
+>     statusDate: '2017-02-01',
+105c106,115
+<          percentUsed: 80 } ] },
+---
+>          percentFull: 80 } ] },
+>   { room: 'a104',
+>     MACaddress: '00-26-73-88-86-B7',
+>     IPaddress: '10.177.200.57',
+>     printerModel: 'Ricoh-SP3500N',
+>     statusDate: '2017-02-01',
+>     tonerStatus: 
+>      [ { color: 'Black',
+>          nativeValue: 'Replace Print Cartridge Soon',
+>          percentFull: 10 } ] },
+110c120
+<     statusDate: '2016-08-24',
+---
+>     statusDate: '2017-02-01',
+113,114c123,124
+<          nativeValue: 'Remaining Level 5',
+<          percentUsed: 100 } ] },
+---
+>          nativeValue: 'Remaining Level 3',
+>          percentFull: 60 } ] },
+119c129
+<     statusDate: '2016-08-24',
+---
+>     statusDate: '2017-02-01',
+122,124d131
+<          nativeValue: 'Remaining Level 5',
+<          percentUsed: 100 },
+<        { color: 'Magenta',
+126c133,136
+<          percentUsed: 80 },
+---
+>          percentFull: 80 },
+>        { color: 'Magenta',
+>          nativeValue: 'Remaining Level 5',
+>          percentFull: 100 },
+128,129c138,139
+<          nativeValue: 'Remaining Level 4',
+<          percentUsed: 80 },
+---
+>          nativeValue: 'Remaining Level 5',
+>          percentFull: 100 },
+132c142
+<          percentUsed: 80 } ] },
+---
+>          percentFull: 80 } ] },
+137c147
+<     statusDate: '2016-08-24',
+---
+>     statusDate: '2017-01-31',
+140,141c150,151
+<          nativeValue: 'Remaining Level 4',
+<          percentUsed: 80 } ] },
+---
+>          nativeValue: 'Remaining Level 2',
+>          percentFull: 40 } ] },
+150c160
+<          percentUsed: 100 } ] },
+---
+>          percentFull: 100 } ] },
+155c165
+<     statusDate: '2016-08-24',
+---
+>     statusDate: '2017-02-01',
+157a168,173
+>          nativeValue: 'Remaining Level 5',
+>          percentFull: 100 },
+>        { color: 'Magenta',
+>          nativeValue: 'Remaining Level 4',
+>          percentFull: 80 },
+>        { color: 'Yellow',
+159c175,185
+<          percentUsed: 80 },
+---
+>          percentFull: 80 },
+>        { color: 'Cyan',
+>          nativeValue: 'Remaining Level 4',
+>          percentFull: 80 } ] },
+>   { room: 'b104',
+>     MACaddress: '00-26-73-98-67-5F',
+>     IPaddress: '10.177.200.83',
+>     printerModel: 'Ricoh-SPC252SF',
+>     statusDate: '2017-02-01',
+>     tonerStatus: 
+>      [ { color: 'Black', nativeValue: 'Out of Toner', percentFull: 0 },
+162c188
+<          percentUsed: 60 },
+---
+>          percentFull: 60 },
+165c191
+<          percentUsed: 40 },
+---
+>          percentFull: 40 },
+167,168c193,194
+<          nativeValue: 'Remaining Level 2',
+<          percentUsed: 40 } ] },
+---
+>          nativeValue: 'Remaining Level 3',
+>          percentFull: 60 } ] },
+170,173c196,199
+<     MACaddress: '00-26-73-88-86-BF',
+<     IPaddress: '10.177.200.51',
+<     printerModel: 'Ricoh-SP3500N',
+<     statusDate: '2016-08-24',
+---
+>     MACaddress: '00-26-73-69-72-A1',
+>     IPaddress: '10.177.200.67',
+>     printerModel: 'Ricoh-SPC252SF',
+>     statusDate: '2017-02-01',
+177c203,212
+<          percentUsed: 100 } ] },
+---
+>          percentFull: 100 },
+>        { color: 'Magenta',
+>          nativeValue: 'Remaining Level 5',
+>          percentFull: 100 },
+>        { color: 'Yellow',
+>          nativeValue: 'Remaining Level 5',
+>          percentFull: 100 },
+>        { color: 'Cyan',
+>          nativeValue: 'Remaining Level 4',
+>          percentFull: 80 } ] },
+182c217
+<     statusDate: '2016-08-24',
+---
+>     statusDate: '2017-02-01',
+186c221
+<          percentUsed: 60 } ] },
+---
+>          percentFull: 60 } ] },
+188,191c223,226
+<     MACaddress: '00-26-73-69-72-A1',
+<     IPaddress: '10.177.200.67',
+<     printerModel: 'Ricoh-SPC252SF',
+<     statusDate: '2016-08-24',
+---
+>     MACaddress: '00-26-73-88-86-BF',
+>     IPaddress: '10.177.200.51',
+>     printerModel: 'Ricoh-SP3500N',
+>     statusDate: '2017-02-01',
+194,204c229,230
+<          nativeValue: 'Remaining Level 5',
+<          percentUsed: 100 },
+<        { color: 'Magenta',
+<          nativeValue: 'Remaining Level 4',
+<          percentUsed: 80 },
+<        { color: 'Yellow',
+<          nativeValue: 'Remaining Level 4',
+<          percentUsed: 80 },
+<        { color: 'Cyan',
+<          nativeValue: 'Remaining Level 4',
+<          percentUsed: 80 } ] },
+---
+>          nativeValue: 'Remaining Level 3',
+>          percentFull: 60 } ] },
+209c235
+<     statusDate: '2016-08-24',
+---
+>     statusDate: '2017-02-01',
+211a238,252
+>          nativeValue: 'Remaining Level 5',
+>          percentFull: 100 } ] },
+>   { room: 'c101',
+>     MACaddress: '00-26-73-69-8D-9D',
+>     IPaddress: '10.177.200.37',
+>     printerModel: 'Ricoh-SPC252SF',
+>     statusDate: '2017-02-01',
+>     tonerStatus: 
+>      [ { color: 'Black',
+>          nativeValue: 'Remaining Level 4',
+>          percentFull: 80 },
+>        { color: 'Magenta',
+>          nativeValue: 'Remaining Level 3',
+>          percentFull: 60 },
+>        { color: 'Yellow',
+213c254,257
+<          percentUsed: 60 } ] },
+---
+>          percentFull: 60 },
+>        { color: 'Cyan',
+>          nativeValue: 'Remaining Level 3',
+>          percentFull: 60 } ] },
+218c262
+<     statusDate: '2016-08-24',
+---
+>     statusDate: '2017-02-01',
+221,222c265,266
+<          nativeValue: 'Remaining Level 5',
+<          percentUsed: 100 } ] },
+---
+>          nativeValue: 'Remaining Level 4',
+>          percentFull: 80 } ] },
+227c271
+<     statusDate: '2016-08-24',
+---
+>     statusDate: '2017-02-01',
+230,231c274,293
+<          nativeValue: 'Remaining Level 4',
+<          percentUsed: 80 } ] },
+---
+>          nativeValue: 'Remaining Level 2',
+>          percentFull: 40 } ] },
+>   { room: 'c105',
+>     MACaddress: '00-26-73-B2-DE-7F',
+>     IPaddress: '10.177.200.86',
+>     printerModel: 'Ricoh-SPC252SF',
+>     statusDate: '2017-02-01',
+>     tonerStatus: 
+>      [ { color: 'Black',
+>          nativeValue: 'Remaining Level 5',
+>          percentFull: 100 },
+>        { color: 'Magenta',
+>          nativeValue: 'Remaining Level 5',
+>          percentFull: 100 },
+>        { color: 'Yellow',
+>          nativeValue: 'Remaining Level 5',
+>          percentFull: 100 },
+>        { color: 'Cyan',
+>          nativeValue: 'Remaining Level 5',
+>          percentFull: 100 } ] },
+236c298
+<     statusDate: '2016-08-24',
+---
+>     statusDate: '2017-02-01',
+239,240c301,302
+<          nativeValue: 'Remaining Level 5',
+<          percentUsed: 100 } ] },
+---
+>          nativeValue: 'Remaining Level 4',
+>          percentFull: 80 } ] },
+245c307
+<     statusDate: '2016-08-24',
+---
+>     statusDate: '2017-02-01',
+248,249c310,311
+<          nativeValue: 'Remaining Level 5',
+<          percentUsed: 100 } ] },
+---
+>          nativeValue: 'Cartridge Almost Empty',
+>          percentFull: 20 } ] },
+254c316
+<     statusDate: '2016-08-24',
+---
+>     statusDate: '2017-02-01',
+257,258c319,320
+<          nativeValue: 'Remaining Level 5',
+<          percentUsed: 100 },
+---
+>          nativeValue: 'Remaining Level 3',
+>          percentFull: 60 },
+260,261c322,323
+<          nativeValue: 'Remaining Level 5',
+<          percentUsed: 100 },
+---
+>          nativeValue: 'Remaining Level 4',
+>          percentFull: 80 },
+263,264c325,326
+<          nativeValue: 'Remaining Level 5',
+<          percentUsed: 100 },
+---
+>          nativeValue: 'Remaining Level 4',
+>          percentFull: 80 },
+266,267c328,329
+<          nativeValue: 'Remaining Level 5',
+<          percentUsed: 100 } ] },
+---
+>          nativeValue: 'Remaining Level 4',
+>          percentFull: 80 } ] },
+272c334
+<     statusDate: '2016-08-24',
+---
+>     statusDate: '2017-01-24',
+275,276c337,338
+<          nativeValue: 'Replace Print Cartridge Soon',
+<          percentUsed: 10 } ] },
+---
+>          nativeValue: 'Remaining Level 5',
+>          percentFull: 100 } ] },
+281c343
+<     statusDate: '2016-08-24',
+---
+>     statusDate: '2017-02-01',
+284,285c346,347
+<          nativeValue: 'Remaining Level 4',
+<          percentUsed: 80 } ] },
+---
+>          nativeValue: 'Remaining Level 2',
+>          percentFull: 40 } ] },
+290c352
+<     statusDate: '2016-08-18',
+---
+>     statusDate: '2017-02-01',
+293,294c355,356
+<          nativeValue: 'Remaining Level 4',
+<          percentUsed: 80 } ] },
+---
+>          nativeValue: 'Remaining Level 3',
+>          percentFull: 60 } ] },
+299c361
+<     statusDate: '2016-08-24',
+---
+>     statusDate: '2017-02-01',
+303c365
+<          percentUsed: 60 } ] },
+---
+>          percentFull: 60 } ] },
+308c370
+<     statusDate: '2016-08-24',
+---
+>     statusDate: '2017-02-01',
+311,312c373,374
+<          nativeValue: 'Remaining Level 5',
+<          percentUsed: 100 },
+---
+>          nativeValue: 'Toner Almost Empty',
+>          percentFull: 20 },
+314,315c376,377
+<          nativeValue: 'Remaining Level 5',
+<          percentUsed: 100 },
+---
+>          nativeValue: 'Remaining Level 4',
+>          percentFull: 80 },
+317,318c379,380
+<          nativeValue: 'Remaining Level 5',
+<          percentUsed: 100 },
+---
+>          nativeValue: 'Remaining Level 4',
+>          percentFull: 80 },
+320,321c382,383
+<          nativeValue: 'Remaining Level 5',
+<          percentUsed: 100 } ] },
+---
+>          nativeValue: 'Remaining Level 4',
+>          percentFull: 80 } ] },
+326c388
+<     statusDate: '2016-08-24',
+---
+>     statusDate: '2017-02-01',
+330c392
+<          percentUsed: 100 } ] },
+---
+>          percentFull: 100 } ] },
+335c397
+<     statusDate: '2016-08-24',
+---
+>     statusDate: '2017-02-01',
+338,339c400,401
+<          nativeValue: 'Remaining Level 3',
+<          percentUsed: 60 } ] },
+---
+>          nativeValue: 'Remaining Level 2',
+>          percentFull: 40 } ] },
+344c406
+<     statusDate: '2016-08-24',
+---
+>     statusDate: '2017-02-01',
+347,348c409,410
+<          nativeValue: 'Remaining Level 4',
+<          percentUsed: 80 } ] },
+---
+>          nativeValue: 'Remaining Level 3',
+>          percentFull: 60 } ] },
+350,353c412,415
+<     MACaddress: '00-26-73-69-8A-60',
+<     IPaddress: '10.177.200.66',
+<     printerModel: 'Ricoh-SPC252SF',
+<     statusDate: '2016-08-24',
+---
+>     MACaddress: '00-26-73-76-2B-05',
+>     IPaddress: '10.177.200.17',
+>     printerModel: 'Ricoh-SP3400N',
+>     statusDate: '2017-02-01',
+356,366c418,419
+<          nativeValue: 'Toner Almost Empty',
+<          percentUsed: 20 },
+<        { color: 'Magenta',
+<          nativeValue: 'Remaining Level 3',
+<          percentUsed: 60 },
+<        { color: 'Yellow',
+<          nativeValue: 'Remaining Level 2',
+<          percentUsed: 40 },
+<        { color: 'Cyan',
+<          nativeValue: 'Remaining Level 2',
+<          percentUsed: 40 } ] },
+---
+>          nativeValue: 'Remaining Level 5',
+>          percentFull: 100 } ] },
+377c430
+<     statusDate: '2016-08-24',
+---
+>     statusDate: '2017-01-31',
+381c434
+<          percentUsed: 60 } ] },
+---
+>          percentFull: 60 } ] },
+386c439
+<     statusDate: '2016-08-24',
+---
+>     statusDate: '2017-02-01',
+390c443
+<          percentUsed: 80 },
+---
+>          percentFull: 80 },
+392,393c445,446
+<          nativeValue: 'Remaining Level 5',
+<          percentUsed: 100 },
+---
+>          nativeValue: 'Remaining Level 3',
+>          percentFull: 60 },
+395,396c448,449
+<          nativeValue: 'Remaining Level 5',
+<          percentUsed: 100 },
+---
+>          nativeValue: 'Remaining Level 2',
+>          percentFull: 40 },
+398,399c451,452
+<          nativeValue: 'Remaining Level 5',
+<          percentUsed: 100 } ] },
+---
+>          nativeValue: 'Remaining Level 3',
+>          percentFull: 60 } ] },
+404c457
+<     statusDate: '2016-08-24',
+---
+>     statusDate: '2017-02-01',
+407,408c460,479
+<          nativeValue: 'Remaining Level 3',
+<          percentUsed: 60 },
+---
+>          nativeValue: 'Remaining Level 2',
+>          percentFull: 40 },
+>        { color: 'Magenta',
+>          nativeValue: 'Remaining Level 4',
+>          percentFull: 80 },
+>        { color: 'Yellow',
+>          nativeValue: 'Remaining Level 4',
+>          percentFull: 80 },
+>        { color: 'Cyan',
+>          nativeValue: 'Remaining Level 4',
+>          percentFull: 80 } ] },
+>   { room: 'p4',
+>     MACaddress: '00-26-73-98-67-5E',
+>     IPaddress: '10.177.200.82',
+>     printerModel: 'Ricoh-SPC252SF',
+>     statusDate: '2017-01-27',
+>     tonerStatus: 
+>      [ { color: 'Black',
+>          nativeValue: 'Remaining Level 4',
+>          percentFull: 80 },
+411c482
+<          percentUsed: 100 },
+---
+>          percentFull: 100 },
+414c485
+<          percentUsed: 100 },
+---
+>          percentFull: 100 },
+416,417c487,488
+<          nativeValue: 'Remaining Level 5',
+<          percentUsed: 100 } ] },
+---
+>          nativeValue: 'Remaining Level 4',
+>          percentFull: 80 } ] },
+422c493
+<     statusDate: '2016-08-24',
+---
+>     statusDate: '2016-08-29',
+426c497,515
+<          percentUsed: 60 } ] },
+---
+>          percentFull: 60 } ] },
+>   { room: 'p5',
+>     MACaddress: '00-26-73-B2-1F-27',
+>     IPaddress: '10.177.200.81',
+>     printerModel: 'Ricoh-SPC252SF',
+>     statusDate: '2017-02-01',
+>     tonerStatus: 
+>      [ { color: 'Black',
+>          nativeValue: 'Remaining Level 5',
+>          percentFull: 100 },
+>        { color: 'Magenta',
+>          nativeValue: 'Toner Almost Empty',
+>          percentFull: 20 },
+>        { color: 'Yellow',
+>          nativeValue: 'Remaining Level 5',
+>          percentFull: 100 },
+>        { color: 'Cyan',
+>          nativeValue: 'Remaining Level 5',
+>          percentFull: 100 } ] },
+431c520
+<     statusDate: '2016-08-24',
+---
+>     statusDate: '2017-02-01',
+434,435c523,524
+<          nativeValue: 'Remaining Level 5',
+<          percentUsed: 100 } ] },
+---
+>          nativeValue: 'Remaining Level 3',
+>          percentFull: 60 } ] },
+437,440c526,529
+<     MACaddress: '00-26-73-88-86-B7',
+<     IPaddress: '10.177.200.57',
+<     printerModel: 'Ricoh-SP3500N',
+<     statusDate: '2016-08-24',
+---
+>     MACaddress: '00-26-73-98-67-73',
+>     IPaddress: '10.177.200.80',
+>     printerModel: 'Ricoh-SPC252SF',
+>     statusDate: '2017-02-01',
+442a532,540
+>          nativeValue: 'Remaining Level 5',
+>          percentFull: 100 },
+>        { color: 'Magenta',
+>          nativeValue: 'Remaining Level 4',
+>          percentFull: 80 },
+>        { color: 'Yellow',
+>          nativeValue: 'Remaining Level 4',
+>          percentFull: 80 },
+>        { color: 'Cyan',
+444c542
+<          percentUsed: 60 } ] },
+---
+>          percentFull: 60 } ] },
+446,449c544,547
+<     MACaddress: '00-26-73-76-2B-05',
+<     IPaddress: '10.177.200.17',
+<     printerModel: 'Ricoh-SP3400N',
+<     statusDate: '2016-08-24',
+---
+>     MACaddress: '00-26-73-69-8A-60',
+>     IPaddress: '10.177.200.66',
+>     printerModel: 'Ricoh-SPC252SF',
+>     statusDate: '2017-02-01',
+452,453c550,560
+<          nativeValue: 'Remaining Level 2',
+<          percentUsed: 40 } ] } ]
+---
+>          nativeValue: 'Remaining Level 4',
+>          percentFull: 80 },
+>        { color: 'Magenta',
+>          nativeValue: 'Remaining Level 5',
+>          percentFull: 100 },
+>        { color: 'Yellow',
+>          nativeValue: 'Remaining Level 5',
+>          percentFull: 100 },
+>        { color: 'Cyan',
+>          nativeValue: 'Remaining Level 5',
+>          percentFull: 100 } ] } ]

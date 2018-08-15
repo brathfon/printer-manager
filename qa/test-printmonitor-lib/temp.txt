@@ -1,0 +1,281 @@
+Setting ourSysmonDirectory to /Users/bill/bts/Development/school/dropbox-monitor/testdata/sysmon
+arv0 /usr/local/bin/node
+arv1 /Users/bill/bts/Development/school/sysmon/qa/test-sysmon-api/testSysmon.js
+arv2 a101
+
+
+
+
+Test getAllHosts()
+(0) a101
+(1) a102
+(2) a103
+(3) b201
+(4) b202
+(5) b203
+
+
+
+
+Test getAllHosts()
+[ { room: 'a101',
+    hostArray: 
+     [ 'a101-2070-iMac',
+       'a101-2071-iMac',
+       'a101-2428-MacBook-Pro',
+       'a101-2429-MacBook-Pro',
+       'a101-2430-MacBook-Pro',
+       'a101-2431-MacBook-Pro',
+       'a101-2432-MacBook-Pro',
+       'a101-2433-MacBook-Pro',
+       'a101-2434-MacBook-Pro',
+       'a101-2435-MacBook-Pro',
+       'a101-2436-MacBook-Pro',
+       'a101-2437-MacBook-Pro' ] },
+  { room: 'a102',
+    hostArray: 
+     [ 'a102-2072-iMac',
+       'a102-2073-iMac',
+       'a102-2439-MacBook-Pro',
+       'a102-2440-MacBook-Pro',
+       'a102-2441-MacBook-Pro',
+       'a102-2442-MacBook-Pro',
+       'a102-2443-MacBook-Pro',
+       'a102-2445-MacBook-Pro',
+       'a102-2446-MacBook-Pro',
+       'a102-2447-MacBook-Pro',
+       'a102-noDecal-iMac' ] },
+  { room: 'a103',
+    hostArray: 
+     [ 'a103-2074-iMac',
+       'a103-2075-iMac',
+       'a103-2448-MacBook-Pro',
+       'a103-2449-MacBook-Pro',
+       'a103-2450-MacBook-Pro',
+       'a103-2451-MacBook-Pro',
+       'a103-2452-MacBook-Pro',
+       'a103-2453-MacBook-Pro',
+       'a103-2454-MacBook-Pro',
+       'a103-2455-MacBook-Pro' ] },
+  { room: 'b201',
+    hostArray: 
+     [ 'b201-1284-iMac',
+       'b201-1285-iMac',
+       'b201-1286-iMac',
+       'b201-1287-iMac',
+       'b201-1751-iMac',
+       'b201-1752-iMac',
+       'b201-2238-MacBook-Pro',
+       'b201-2239-MacBook-Pro',
+       'b201-2240-MacBook-Pro',
+       'b201-2241-MacBook-Pro',
+       'b201-2242-MacBook-Pro',
+       'b201-2243-MacBook-Pro',
+       'b201-2244-MacBook-Pro',
+       'b201-2245-MacBook-Pro',
+       'b201-2246-MacBook-Pro',
+       'b201-2586-MacBook-Pro',
+       'b201-2587-MacBook-Pro',
+       'b201-2588-MacBook-Pro',
+       'b201-2589-MacBook-Pro',
+       'b201-2590-MacBook-Pro',
+       'b201-2591-MacBook-Pro',
+       'b201-2592-MacBook-Pro',
+       'b201-2593-MacBook-Pro',
+       'b201-2594-MacBook-Pro',
+       'b201-2600-MacBook-Pro',
+       'b201-2637-MacBook-Pro',
+       'b201-3009-MacBook-Air' ] },
+  { room: 'b202',
+    hostArray: 
+     [ 'b202-1290-iMac',
+       'b202-1291-iMac',
+       'b202-1753-iMac',
+       'b202-1754-iMac',
+       'b202-2247-MacBook-Pro',
+       'b202-2248-MacBook-Pro',
+       'b202-2249-MacBook-Pro',
+       'b202-2250-MacBook-Pro',
+       'b202-2251-MacBook-Pro',
+       'b202-2253-MacBook-Pro',
+       'b202-2254-MacBook-Pro',
+       'b202-2255-MacBook-Pro',
+       'b202-2256-MacBook-Pro',
+       'b202-2257-MacBook-Pro',
+       'b202-2488-MacBook-Pro',
+       'b202-2595-MacBook-Pro',
+       'b202-2596-MacBook-Pro',
+       'b202-2597-MacBook-Pro',
+       'b202-2598-MacBook-Pro',
+       'b202-2599-MacBook-Pro',
+       'b202-2608-MacBook-Pro',
+       'b202-2609-MacBook-Pro',
+       'b202-2610-MacBook-Pro',
+       'b202-2611-MacBook-Pro',
+       'b202-2612-MacBook-Pro',
+       'b202-3010-MacBook-Air' ] },
+  { room: 'b203',
+    hostArray: 
+     [ 'b203-1292-iMac',
+       'b203-1293-iMac',
+       'b203-1294-iMac',
+       'b203-1295-iMac',
+       'b203-1755-iMac',
+       'b203-1756-iMac',
+       'b203-2258-MacBook-Pro',
+       'b203-2259-MacBook-Pro',
+       'b203-2260-MacBook-Pro',
+       'b203-2261-MacBook-Pro',
+       'b203-2262-MacBook-Pro',
+       'b203-2263-MacBook-Pro',
+       'b203-2264-MacBook-Pro',
+       'b203-2265-MacBook-Pro',
+       'b203-2266-MacBook-Pro',
+       'b203-2267-MacBook-Pro',
+       'b203-2601-MacBook-Pro',
+       'b203-2602-MacBook-Pro',
+       'b203-2603-MacBook-Pro',
+       'b203-2604-MacBook-Pro',
+       'b203-2605-MacBook-Pro',
+       'b203-2606-MacBook-Pro',
+       'b203-2607-MacBook-Pro',
+       'b203-2618-MacBook-Pro',
+       'b203-2619-MacBook-Pro',
+       'b203-2620-MacBook-Pro',
+       'b203-3011-MacBook-Air' ] } ]
+(0) a101
+  (0) a101-2070-iMac
+  (1) a101-2071-iMac
+  (2) a101-2428-MacBook-Pro
+  (3) a101-2429-MacBook-Pro
+  (4) a101-2430-MacBook-Pro
+  (5) a101-2431-MacBook-Pro
+  (6) a101-2432-MacBook-Pro
+  (7) a101-2433-MacBook-Pro
+  (8) a101-2434-MacBook-Pro
+  (9) a101-2435-MacBook-Pro
+  (10) a101-2436-MacBook-Pro
+  (11) a101-2437-MacBook-Pro
+(1) a102
+  (0) a102-2072-iMac
+  (1) a102-2073-iMac
+  (2) a102-2439-MacBook-Pro
+  (3) a102-2440-MacBook-Pro
+  (4) a102-2441-MacBook-Pro
+  (5) a102-2442-MacBook-Pro
+  (6) a102-2443-MacBook-Pro
+  (7) a102-2445-MacBook-Pro
+  (8) a102-2446-MacBook-Pro
+  (9) a102-2447-MacBook-Pro
+  (10) a102-noDecal-iMac
+(2) a103
+  (0) a103-2074-iMac
+  (1) a103-2075-iMac
+  (2) a103-2448-MacBook-Pro
+  (3) a103-2449-MacBook-Pro
+  (4) a103-2450-MacBook-Pro
+  (5) a103-2451-MacBook-Pro
+  (6) a103-2452-MacBook-Pro
+  (7) a103-2453-MacBook-Pro
+  (8) a103-2454-MacBook-Pro
+  (9) a103-2455-MacBook-Pro
+(3) b201
+  (0) b201-1284-iMac
+  (1) b201-1285-iMac
+  (2) b201-1286-iMac
+  (3) b201-1287-iMac
+  (4) b201-1751-iMac
+  (5) b201-1752-iMac
+  (6) b201-2238-MacBook-Pro
+  (7) b201-2239-MacBook-Pro
+  (8) b201-2240-MacBook-Pro
+  (9) b201-2241-MacBook-Pro
+  (10) b201-2242-MacBook-Pro
+  (11) b201-2243-MacBook-Pro
+  (12) b201-2244-MacBook-Pro
+  (13) b201-2245-MacBook-Pro
+  (14) b201-2246-MacBook-Pro
+  (15) b201-2586-MacBook-Pro
+  (16) b201-2587-MacBook-Pro
+  (17) b201-2588-MacBook-Pro
+  (18) b201-2589-MacBook-Pro
+  (19) b201-2590-MacBook-Pro
+  (20) b201-2591-MacBook-Pro
+  (21) b201-2592-MacBook-Pro
+  (22) b201-2593-MacBook-Pro
+  (23) b201-2594-MacBook-Pro
+  (24) b201-2600-MacBook-Pro
+  (25) b201-2637-MacBook-Pro
+  (26) b201-3009-MacBook-Air
+(4) b202
+  (0) b202-1290-iMac
+  (1) b202-1291-iMac
+  (2) b202-1753-iMac
+  (3) b202-1754-iMac
+  (4) b202-2247-MacBook-Pro
+  (5) b202-2248-MacBook-Pro
+  (6) b202-2249-MacBook-Pro
+  (7) b202-2250-MacBook-Pro
+  (8) b202-2251-MacBook-Pro
+  (9) b202-2253-MacBook-Pro
+  (10) b202-2254-MacBook-Pro
+  (11) b202-2255-MacBook-Pro
+  (12) b202-2256-MacBook-Pro
+  (13) b202-2257-MacBook-Pro
+  (14) b202-2488-MacBook-Pro
+  (15) b202-2595-MacBook-Pro
+  (16) b202-2596-MacBook-Pro
+  (17) b202-2597-MacBook-Pro
+  (18) b202-2598-MacBook-Pro
+  (19) b202-2599-MacBook-Pro
+  (20) b202-2608-MacBook-Pro
+  (21) b202-2609-MacBook-Pro
+  (22) b202-2610-MacBook-Pro
+  (23) b202-2611-MacBook-Pro
+  (24) b202-2612-MacBook-Pro
+  (25) b202-3010-MacBook-Air
+(5) b203
+  (0) b203-1292-iMac
+  (1) b203-1293-iMac
+  (2) b203-1294-iMac
+  (3) b203-1295-iMac
+  (4) b203-1755-iMac
+  (5) b203-1756-iMac
+  (6) b203-2258-MacBook-Pro
+  (7) b203-2259-MacBook-Pro
+  (8) b203-2260-MacBook-Pro
+  (9) b203-2261-MacBook-Pro
+  (10) b203-2262-MacBook-Pro
+  (11) b203-2263-MacBook-Pro
+  (12) b203-2264-MacBook-Pro
+  (13) b203-2265-MacBook-Pro
+  (14) b203-2266-MacBook-Pro
+  (15) b203-2267-MacBook-Pro
+  (16) b203-2601-MacBook-Pro
+  (17) b203-2602-MacBook-Pro
+  (18) b203-2603-MacBook-Pro
+  (19) b203-2604-MacBook-Pro
+  (20) b203-2605-MacBook-Pro
+  (21) b203-2606-MacBook-Pro
+  (22) b203-2607-MacBook-Pro
+  (23) b203-2618-MacBook-Pro
+  (24) b203-2619-MacBook-Pro
+  (25) b203-2620-MacBook-Pro
+  (26) b203-3011-MacBook-Air
+
+
+
+
+Test getHostsForRoom()
+(0) a101-2070-iMac
+(1) a101-2071-iMac
+(2) a101-2428-MacBook-Pro
+(3) a101-2429-MacBook-Pro
+(4) a101-2430-MacBook-Pro
+(5) a101-2431-MacBook-Pro
+(6) a101-2432-MacBook-Pro
+(7) a101-2433-MacBook-Pro
+(8) a101-2434-MacBook-Pro
+(9) a101-2435-MacBook-Pro
+(10) a101-2436-MacBook-Pro
+(11) a101-2437-MacBook-Pro

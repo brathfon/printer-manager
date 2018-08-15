@@ -1,0 +1,1 @@
+Parses printers that have a cron that collects their basic web information each night and parses it to find low cartridges, etc.

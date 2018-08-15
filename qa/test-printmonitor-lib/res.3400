@@ -1,0 +1,21 @@
+arv0 /usr/local/bin/node
+arv1 /Users/bill/bts/Development/school/printermonitor/qa/test-printmonitor-lib/testParser.js
+arv2 undefined
+
+
+
+
+Test printerMonitorParser()
+{ 'Black Toner': 'Remaining Level 5',
+  'Fuser Unit': 'Status OK',
+  'Transfer Roller Unit': 'Status OK',
+  'Paper Feed Roller Unit': 'Status OK',
+  'Tray 1': 'Tray 1',
+  'Tray 1 Paper Size': 'Status OK',
+  'Tray 1 Paper Type': 'Letter',
+  'Bypass Tray': 'Out of Paper',
+  'Bypass Tray Paper Size': 'Letter',
+  'Bypass Tray Paper Type': 'Plain Paper ' }
+[ { color: 'Black',
+    nativeValue: 'Remaining Level 5',
+    percentUsed: 100 } ]

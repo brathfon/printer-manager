@@ -1,0 +1,35 @@
+# Option for the last column, "install on student machines"
+# yes: will delete any printers and install printer specified
+# no:  will delete any printers
+# manual: will neither install or delete printers
+classroom,printer type,printer name,printer ipAddress, install on student machines?
+a101,RICOH_Aficio_SP_3400N,A101 RICOH 3400N,10.177.200.23,no
+a102,RICOH_SP_C252SF,A102 RICOH 252SF,10.177.200.65,yes
+a103,RICOH_Aficio_SP_3500N,A103 RICOH 3500N,10.177.200.40,no
+a104,Nothing Installed,nothing_installed,noIP,no
+
+b202,RICOH_Aficio_SP_3500N,B202 RICOH 3500N,10.177.200.52,yes
+
+
+c101,RICOH_SP_C252SF,C101 RICOH 252SF,10.177.200.37,no
+c102,RICOH_Aficio_SP_3500N,C102 RICOH 3500N,10.177.200.32,yes
+c103,RICOH_Aficio_SP_3400N,C103 RICOH 3400N,10.177.200.11,yes
+c104,Nothing Installed,nothing_installed,noIP,no
+
+c201,RICOH_Aficio_SP_3500N,C201 RICOH 3500N,10.177.200.53,yes
+c202,RICOH_Aficio_SP_3400N,C202 RICOH 3400N,10.177.200.12,yes
+c203,RICOH_SP_C252SF,C203 RICOH 252SF,10.177.200.63,no
+
+e101,RICOH_Aficio_SP_3500N,E101 RICOH 3500N,10.177.200.33,yes
+
+e201,RICOH_Aficio_SP_3500N,E201 RICOH 3500N,10.177.200.68,yes
+#e201,Nothing Installed,nothing_installed,noIP,no
+#e201,RICOH_SP_C252SF,E201 RICOH 252SF,10.177.200.76,no
+e202,RICOH_Aficio_SP_3500N,E202 RICOH 3500N,10.177.200.38,yes
+
+# Liko usually sets up a couple inkjets for his kids
+p3,Nothing Installed,nothing_installed,noIP,manual
+p5,RICOH_SP_C252SF,P5 RICOH 252SF,10.177.200.81,yes
+p8,RICOH_SP_C252SF,P8 RICOH 252SF,10.177.200.80,no
+p9,RICOH_SP_C252SF,P9 RICOH 252SF,10.177.200.66,yes
+p12,RICOH_Aficio_SP_3500N,P12 RICOH 3500N,10.177.200.58,no

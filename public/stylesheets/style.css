@@ -1,0 +1,73 @@
+.file-load-progress {
+  margin: 0px;
+}
+
+.toner-table {
+  margin: 0px;
+}
+
+.native-value {
+  margin: 0px;
+}
+
+.old-light-gray-background {
+  background: rgba(240, 240, 240, 1.0);
+}
+
+.light-gray-background {
+  background: #f9f9f9;
+}
+
+
+.toner-status {
+  background: LightGray;
+  margin: 0px;
+  text-shadow: 1px 1px #000000;
+}
+
+.black-bar-background {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.magenta-bar-background {
+  background: rgba(255, 0, 255, 0.2);
+}
+
+.yellow-bar-background {
+  background: rgba(255, 255, 0, 0.2);
+}
+
+.cyan-bar-background {
+  background: rgba(0, 255, 255, 0.2);
+}
+
+.black-toner-status {
+  background: rgba(0, 0, 0, 1.0);
+}
+
+.magenta-toner-status {
+  background: rgba(255, 0, 255, 1.0);
+}
+
+.yellow-toner-status {
+  background: rgba(255, 255, 0, 1.0);
+}
+
+.cyan-toner-status {
+  background: Cyan;
+}
+
+.unknown-toner-status {
+  background: DarkGray;
+}
+
+.toner-table-status-column {
+  width: 33%;
+}
+
+.cartridge-progress-bar-column {
+  width: 60%;
+}
+
+.statusUnknownMessage {
+  text-align: center;

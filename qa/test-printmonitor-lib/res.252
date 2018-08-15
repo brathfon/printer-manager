@@ -1,0 +1,33 @@
+arv0 /usr/local/bin/node
+arv1 /Users/bill/bts/Development/school/printermonitor/qa/test-printmonitor-lib/testParser.js
+arv2 undefined
+
+
+
+
+Test printerMonitorParser()
+{ Black: 'Remaining Level 3',
+  Magenta: 'Remaining Level 5',
+  Yellow: 'Remaining Level 5',
+  Cyan: 'Remaining Level 5',
+  'Waste Toner Bottle': 'Status OK',
+  'Intermediate Transfer Unit': 'Status OK',
+  'Transfer Roller': 'Status OK',
+  'Tray 1': 'Status OK',
+  'Tray 1 Paper Size': '8 1/2 x 11',
+  'Tray 1 Paper Type': 'Middle Thick Paper (75-90g/m2)',
+  'Bypass Tray': 'Out of Paper',
+  'Bypass Tray Paper Size': '8 1/2 x 11',
+  'Bypass Tray Paper Type': 'Middle Thick Paper (75-90g/m2)' }
+[ { color: 'Black',
+    nativeValue: 'Remaining Level 3',
+    percentUsed: 60 },
+  { color: 'Magenta',
+    nativeValue: 'Remaining Level 5',
+    percentUsed: 100 },
+  { color: 'Yellow',
+    nativeValue: 'Remaining Level 5',
+    percentUsed: 100 },
+  { color: 'Cyan',
+    nativeValue: 'Remaining Level 5',
+    percentUsed: 100 } ]

@@ -1,0 +1,21 @@
+extends layout
+
+include _includes/tonerReport
+
+block content
+  .container
+    .row
+      ul.nav.nav-tabs
+        li.active
+          a(href="#toner", data-toggle="tab", aria-expanded="true") Toner Report
+        li
+          a(href="#critical", data-toggle="tab", aria-expanded="true") Critical Cartridges
+        li
+          a(href="#bytype", data-toggle="tab", aria-expanded="true") By Type
+      div(id="myTabContent").tab-content
+        div(id="toner").tab-pane.fade.active.in
+          +tonerReport(tonerReportRecords)
+        div(id="critical").tab-pane.fade
+          +criticalCartridgesReport(criticalCartridges)
+        div(id="bytype").tab-pane.fade
+          +byTypeReport(cartridgesByType)
