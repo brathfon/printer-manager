@@ -1,5 +1,6 @@
 #!/bin/bash
 
-export SYSMON_DIRECTORY=/Users/bill/bts/Development/school/sysmon/testdata/sysmon
+# this should be set by the .env file
+#export SYSMON_DIRECTORY=
 
 node ./testParser.js

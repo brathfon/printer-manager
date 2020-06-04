@@ -1,0 +1,45 @@
+
+Database sizes
+Database	Size (MB)
+mysql	2.42
+information_schema	0.00
+performance_schema	0.00
+sys	0.02
+dev_water_quality	2.31
+water_quality	2.31
+dev_printer_manager	25.75
+
+Table status for dev_printer_manager
+Name	Engine	Version	Row_format	Rows	Avg_row_length	Data_length	Max_data_length	Index_length	Data_free	Auto_increment	Create_time	Update_time	Check_time	Collation	Checksum	Create_options	Comment
+all_current_color_levels	NULL	NULL	NULL	0	0	0	0	0	0	NULL	2020-06-03 18:56:57	NULL	NULL	NULL	NULL	NULL	VIEW
+change_log	InnoDB	10	Dynamic	0	0	16384	0	49152	0	NULL	2020-06-03 18:56:57	NULL	NULL	utf8mb4_0900_ai_ci	NULL		'dev_printer_manager.all_current_color_levels' is not BASE TABLE
+color_level_statuses	NULL	NULL	NULL	0	0	0	0	0	0	NULL	2020-06-03 18:56:57	NULL	NULL	NULL	NULL	NULL	VIEW
+color_levels	InnoDB	10	Dynamic	646431	41	26787840	0	0	2097152	NULL	2020-06-03 18:57:01	NULL	NULL	utf8mb4_0900_ai_ci	NULL		'dev_printer_manager.color_level_statuses' is not BASE TABLE
+current_color_levels	NULL	NULL	NULL	0	0	0	0	0	0	NULL	2020-06-03 18:56:57	NULL	NULL	NULL	NULL	NULL	VIEW
+install_preferences	InnoDB	10	Dynamic	0	0	16384	0	16384	0	NULL	2020-06-03 18:56:57	NULL	NULL	utf8mb4_0900_ai_ci	NULL		'dev_printer_manager.current_color_levels' is not BASE TABLE
+models	InnoDB	10	Dynamic	19	862	16384	0	16384	0	20	2020-06-03 18:56:57	2020-06-03 18:56:57	NULL	utf8mb4_0900_ai_ci	NULL		'dev_printer_manager.current_color_levels' is not BASE TABLE
+printers	InnoDB	10	Dynamic	61	268	16384	0	49152	0	62	2020-06-03 18:56:57	2020-06-03 18:56:57	NULL	utf8mb4_0900_ai_ci	NULL		'dev_printer_manager.current_color_levels' is not BASE TABLE
+statuses	InnoDB	10	Dynamic	0	0	16384	0	0	0	NULL	2020-06-03 18:56:57	NULL	NULL	utf8mb4_0900_ai_ci	NULL		'dev_printer_manager.current_color_levels' is not BASE TABLE
+
+Table sizes for dev_printer_manager
+Table	Size (MB)
+color_levels	25.55
+printers	0.06
+change_log	0.06
+install_preferences	0.03
+models	0.03
+statuses	0.02
+all_current_color_levels	0.00
+color_level_statuses	0.00
+current_color_levels	0.00
+
+Index sizes for databases
+database_name	table_name	index_name	size_in_mb
+dev_printer_manager	change_log	fk_change_log_models_model_id_idx	0.02
+dev_printer_manager	change_log	mac_address_UNIQUE	0.02
+dev_printer_manager	change_log	tag_number_UNIQUE	0.02
+dev_printer_manager	install_preferences	fk_install_preferences_printers_printer_id_idx	0.02
+dev_printer_manager	models	name_UNIQUE	0.02
+dev_printer_manager	printers	fk_printers_models_model_id_idx	0.02
+dev_printer_manager	printers	mac_address_UNIQUE	0.02
+dev_printer_manager	printers	tag_number_UNIQUE	0.02

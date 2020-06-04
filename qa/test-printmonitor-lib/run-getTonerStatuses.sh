@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#export PRINTER_MONITOR_DIRECTORY=/Volumes/media1/testData/printermonitor-20161205/results
-export PRINTER_MONITOR_DIRECTORY=/Volumes/media1/testData/printermonitor-20170201/results
-export PRINTER_MONITOR_INFO_FILE=/Volumes/media1/testData/printermonitor-20170201/printerInfo.txt
+#these should be set by the env file
+#export PRINTER_MONITOR_DIRECTORY
+#export PRINTER_MONITOR_INFO_FILE
 
 
 node ./testGetTonerStatuses.js

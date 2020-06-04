@@ -20,7 +20,7 @@ else {
 
 var getTonerStatuses = function(req, res, data, callback){
 
-  var path = "/printerapi/getTonerStatuses";
+  var path = "/api/newGetTonerStatuses";
 
   var requestOptions = {
     url: printerMonitorApiOptions.server + path,
@@ -99,11 +99,11 @@ var flattenTonerStatuses = function(tonerStatuses) {
         newObj['printerModel'] = printerStatus.printerModel;
         newObj['statusDate']   = printerStatus.statusDate;
         // there will only be one status object in the list.  This helps on the other end when reusing the jade mixins
-        newObj['tonerStatus']  = [{ 'color': tonerStatus.color, 'nativeValue': tonerStatus.nativeValue, 'percentFull': tonerStatus.percentFull}]; 
+        newObj['tonerStatus']  = [{ 'color': tonerStatus.color, 'nativeValue': tonerStatus.nativeValue, 'percentFull': tonerStatus.percentFull}];
         flattenedStatuses.push(newObj);
       });
     }
-  }); 
+  });
 
   //debug.log("flattenTonerStatuses : " + util.inspect(flattenedStatuses, false, null));
   return flattenedStatuses;
@@ -124,7 +124,7 @@ var addLowestTonerLevel = function(tonerStatuses) {
       });
     }
     printerStatus['lowestTonerLevel'] = lowestTonerLevel;
-  }); 
+  });
 };
 
 
@@ -164,4 +164,3 @@ module.exports.reports =  function (req, res) {
       });
   });
 };
-

@@ -3,20 +3,20 @@ mixin outputProgressBarRow(cartridge, backgroundColor)
   - tonerBarBackgroundClass = "";
   - percentFull = 0;
   - nativeValue = "unknown";
-  - if (cartridge.color === "Black") {
+  - if (cartridge.color === "black") {
   -   tonerBarClass = "black-toner-status";
   -   tonerBarBackgroundClass = "";
   -   tonerBarBackgroundClass = "black-bar-background";
   - }
-  - else if (cartridge.color === "Magenta") {
+  - else if (cartridge.color === "magenta") {
   -   tonerBarClass = "magenta-toner-status";
   -   tonerBarBackgroundClass = "magenta-bar-background";
   - }
-  - else if (cartridge.color === "Yellow") {
+  - else if (cartridge.color === "yellow") {
   -   tonerBarClass = "yellow-toner-status";
   -   tonerBarBackgroundClass = "yellow-bar-background";
   - }
-  - else if (cartridge.color === "Cyan") {
+  - else if (cartridge.color === "cyan") {
   -   tonerBarClass = "cyan-toner-status";
   -   tonerBarBackgroundClass = "cyan-bar-background";
   - }
@@ -24,8 +24,6 @@ mixin outputProgressBarRow(cartridge, backgroundColor)
   -   tonerBarClass = unknown-toner-status;
   - }
   tr(class="#{backgroundColor}")
-    td
-      h6.native-value #{cartridge.nativeValue}
     td.cartridge-progress-bar-column
       div(class="progress toner-status #{tonerBarBackgroundClass}")
         div(class="progress-bar #{tonerBarClass}", role="progressbar", aria-valuenow="#{cartridge.percentFull}", aria-valuemin="0", aria-valuemax="100", style="width:#{cartridge.percentFull}%") #{cartridge.percentFull}%
@@ -181,4 +179,3 @@ mixin byTypeReport(tonerStatuses)
             - currentType = tonerStatus.printerModel;
             - currentColor = tonerStatus.tonerStatus[0].color;
             +outputByTypeRow(tonerStatus, grayBackground)
-

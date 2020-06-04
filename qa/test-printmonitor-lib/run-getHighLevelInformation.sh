@@ -1,5 +1,6 @@
 #!/bin/bash
 
-#export PRINTER_MONITOR_DIRECTORY=/Volumes/media1/testData/printermonitor-20161205/results
+# expects this to be set outside of script
+#export PRINTER_MONITOR_DIRECTORY=
 
 node ./testGetHighLevelInformation.js

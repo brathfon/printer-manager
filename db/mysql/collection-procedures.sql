@@ -8,19 +8,23 @@ FROM printers AS p,
      models AS m
 WHERE m.data_collection_method = "snmp" AND
       p.is_monitored = 1 AND
+      p.is_active = 1 AND
       m.model_id = p.model_id;
 
 
 DROP PROCEDURE IF EXISTS add_color_level;
 
+
 CREATE PROCEDURE add_color_level(
   IN in_ip_address VARCHAR(15),
+  IN in_collect_time DATETIME,
   IN in_color ENUM("black", "magenta", "yellow", "cyan"),
-  IN in_level INT)
+  IN in_percent_full INT)
   
-INSERT INTO color_levels (printer_id, color, level)
+INSERT INTO color_levels (printer_id, collect_time, color, percent_full)
 VALUES ((SELECT printer_id
           FROM printers
           WHERE ip_address = in_ip_address),
+        in_collect_time,
         in_color,
-        in_level);
+        in_percent_full);

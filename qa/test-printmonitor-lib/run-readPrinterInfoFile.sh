@@ -1,5 +1,6 @@
 #!/bin/bash
 
-export SYSMON_DIRECTORY=/Users/bill/bts/Development/school/sysmon/testdata/sysmon
+# should be set in env file
+#export SYSMON_DIRECTORY=
 
 node ./testReadPrinterInfoFile.js
