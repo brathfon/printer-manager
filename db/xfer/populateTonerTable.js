@@ -4,7 +4,6 @@
 const  printerMonitorData = require('../../lib/printerMonitorData.js');
 const  util = require('util');
 const  request = require('request');
-const  sleep = require('sleep');
 const  fs    = require('fs');
 const  path  = require('path');
 
