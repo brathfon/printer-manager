@@ -2,7 +2,7 @@
   margin: 0px;
 }
 
-.toner-table {
+.color-level-table {
   margin: 0px;
 }
 
@@ -19,7 +19,7 @@
 }
 
 
-.toner-status {
+.color-level-status {
   background: LightGray;
   margin: 0px;
   text-shadow: 1px 1px #000000;
@@ -41,27 +41,27 @@
   background: rgba(0, 255, 255, 0.2);
 }
 
-.black-toner-status {
+.black-color-level-status {
   background: rgba(0, 0, 0, 1.0);
 }
 
-.magenta-toner-status {
+.magenta-color-level-status {
   background: rgba(255, 0, 255, 1.0);
 }
 
-.yellow-toner-status {
+.yellow-color-level-status {
   background: rgba(255, 255, 0, 1.0);
 }
 
-.cyan-toner-status {
+.cyan-color-level-status {
   background: Cyan;
 }
 
-.unknown-toner-status {
+.unknown-color-level-status {
   background: DarkGray;
 }
 
-.toner-table-status-column {
+.color-level-table-status-column {
   width: 33%;
 }
 

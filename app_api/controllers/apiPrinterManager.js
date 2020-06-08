@@ -4,13 +4,6 @@ var helpers = require('./helpers');
 var chalk = require('chalk');
 
 
-
-
-var printerMonitorLib  = require('../../lib/printerMonitorData.js')
-
-// will need to change this
-var debug = require("../../lib/printerMonitorDebug");
-
 // helpers
 
 // unflattenColorLevelStatuses takes the flattened data coming back from the database
@@ -60,7 +53,7 @@ returning:
     IPaddress: '10.177.200.23',
     printerModel: 'Ricoh-SP3400N',
     statusDate: '2017-04-20 12:00:00',
-    tonerStatus: [ { color: 'black', percentFull: 20 } ]
+    colorLevelStatus: [ { color: 'black', percentFull: 20 } ]
   },
   {
     parsingStatus: 'successful',
@@ -69,7 +62,7 @@ returning:
     IPaddress: '10.177.200.65',
     printerModel: 'Ricoh-SPC252SF',
     statusDate: '2017-04-20 12:00:00',
-    tonerStatus: [
+    colorLevelStatus: [
       { color: 'black', percentFull: 80 },
       { color: 'magenta', percentFull: 100 },
       { color: 'yellow', percentFull: 80 },
@@ -95,13 +88,13 @@ var unflattenColorLevelStatuses = function(flatColorLevelData) {
       currentPrinterObj.IPaddress = colorLevel.ip_address;
       currentPrinterObj.printerModel = colorLevel.name;
       currentPrinterObj.statusDate = colorLevel.collect_time;
-      currentPrinterObj.tonerStatus = [];
+      currentPrinterObj.colorLevelStatus = [];
     }
     // put the toner statuses in a list
     let aColorLevelStatus = {};
     aColorLevelStatus.color = colorLevel.color;
     aColorLevelStatus.percentFull = colorLevel.percent_full;
-    currentPrinterObj.tonerStatus.push(aColorLevelStatus);
+    currentPrinterObj.colorLevelStatus.push(aColorLevelStatus);
     lastMacAddress = colorLevel.mac_address;
 
   }
@@ -114,7 +107,6 @@ var unflattenColorLevelStatuses = function(flatColorLevelData) {
 
 
 module.exports.ack = function (req, res) {
-  debug.log("ack request");
   var ackResponse = 'hi-from-printerManager';
   helpers.sendTextResponse(res, 200, ackResponse);
 };
@@ -186,12 +178,7 @@ module.exports.getSnmpPrintersTsv = function (req, res) {
 };
 
 
-module.exports.getTonerStatuses = function (req, res) {
-  //debug.log("calling getTonerStatuses");
-  helpers.sendJsonResponse(res, 201, printerMonitorLib.getTonerStatuses());
-};
-
-module.exports.newGetTonerStatuses = function (req, res) {
+module.exports.getColorLevelStatuses = function (req, res) {
 
   db.pool.query("select room, mac_address, ip_address, collect_time, color, percent_full, name from color_level_statuses", function(err, rows, fields) {
 

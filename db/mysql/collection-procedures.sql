@@ -3,7 +3,7 @@ DROP PROCEDURE IF EXISTS get_snmp_printers;
 CREATE PROCEDURE get_snmp_printers()
 SELECT p.ip_address,
        p.room,
-       m.model_name
+       m.name AS model_name
 FROM printers AS p,
      models AS m
 WHERE m.data_collection_method = "snmp" AND

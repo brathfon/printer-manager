@@ -1,0 +1,181 @@
+mixin outputProgressBarRow(cartridge, backgroundColor)
+  - colorLevelBarClass = "";
+  - colorLevelBarBackgroundClass = "";
+  - percentFull = 0;
+  - nativeValue = "unknown";
+  - if (cartridge.color === "black") {
+  -   colorLevelBarClass = "black-color-level-status";
+  -   colorLevelBarBackgroundClass = "";
+  -   colorLevelBarBackgroundClass = "black-bar-background";
+  - }
+  - else if (cartridge.color === "magenta") {
+  -   colorLevelBarClass = "magenta-color-level-status";
+  -   colorLevelBarBackgroundClass = "magenta-bar-background";
+  - }
+  - else if (cartridge.color === "yellow") {
+  -   colorLevelBarClass = "yellow-color-level-status";
+  -   colorLevelBarBackgroundClass = "yellow-bar-background";
+  - }
+  - else if (cartridge.color === "cyan") {
+  -   colorLevelBarClass = "cyan-color-level-status";
+  -   colorLevelBarBackgroundClass = "cyan-bar-background";
+  - }
+  - else {
+  -   colorLevelBarClass = unknown-color-level-status;
+  - }
+  tr(class="#{backgroundColor}")
+    td.cartridge-progress-bar-column
+      div(class="progress color-level-status #{colorLevelBarBackgroundClass}")
+        div(class="progress-bar #{colorLevelBarClass}", role="progressbar", aria-valuenow="#{cartridge.percentFull}", aria-valuemin="0", aria-valuemax="100", style="width:#{cartridge.percentFull}%") #{cartridge.percentFull}%
+
+
+mixin notused
+    td
+        h6.native-value #{cartridge.nativeValue}
+      a(class="btn btn-primary btn-xs #{colorLevelBarClass}") #{cartridge.nativeValue}
+
+
+mixin outputColorLevelCartridgeTable(colorLevelStatus, backgroundColor)
+  each cartridge in colorLevelStatus
+    +outputProgressBarRow(cartridge, backgroundColor)
+  
+mixin outputColorLevelStatusUnknown(parsingStatus, backgroundColor)
+  tr(class="#{backgroundColor}")
+    td
+      h6.native-value.statusUnknownMessage #{parsingStatus}
+  
+
+mixin outputColorLevelReportRow(colorLevelStatus, grayBackground)
+  - var colorLevelRowClass = "";
+  - if (grayBackground) {
+      - colorLevelRowClass = "light-gray-background";
+  - }
+  - if (colorLevelStatus.lowestColorLevelLevel <= 5) {
+  -    colorLevelRowClass = "danger";
+  - }
+  - else if (colorLevelStatus.lowestColorLevelLevel <= 25) {
+  -    colorLevelRowClass = "warning";
+  - }
+  tr(class="color-level-status-row #{colorLevelRowClass}")
+    td #{colorLevelStatus.room}
+    td #{colorLevelStatus.MACaddress}
+    td
+      a(href="http://#{colorLevelStatus.IPaddress}" target="_blank") #{colorLevelStatus.IPaddress}
+    td #{colorLevelStatus.printerModel}
+    td #{colorLevelStatus.statusDate}
+    td.color-level-table-status-column
+      table.table.table-hover.color-level-table
+        - if (colorLevelStatus.colorLevelStatus) {
+          +outputColorLevelCartridgeTable(colorLevelStatus.colorLevelStatus, colorLevelRowClass)
+        - }
+        - else {
+          +outputColorLevelStatusUnknown(colorLevelStatus.parsingStatus, colorLevelRowClass)
+        -} 
+
+mixin outputCriticalCartridgesReportRow(colorLevelStatus, grayBackground)
+  - var colorLevelRowClass = "";
+  - if (grayBackground) {
+      - colorLevelRowClass = "light-gray-background";
+  - }
+  tr(class="color-level-status-row #{colorLevelRowClass}")
+    td #{colorLevelStatus.room}
+    td #{colorLevelStatus.MACaddress}
+    td
+      a(href="http://#{colorLevelStatus.IPaddress}" target="_blank") #{colorLevelStatus.IPaddress}
+    td #{colorLevelStatus.printerModel}
+    td #{colorLevelStatus.statusDate}
+    td.color-level-table-status-column
+      table.table.table-hover.color-level-table
+        - if (colorLevelStatus.colorLevelStatus) {
+          +outputColorLevelCartridgeTable(colorLevelStatus.colorLevelStatus, colorLevelRowClass)
+        - }
+        - else {
+          +outputColorLevelStatusUnknown(colorLevelStatus.parsingStatus, colorLevelRowClass)
+        -} 
+
+
+mixin outputByTypeRow(colorLevelStatus, grayBackground)
+  - var backgroundClass = "";
+  - if (grayBackground) {
+      - backgroundClass = "light-gray-background";
+  - }
+  tr(class="color-level-status-row #{backgroundClass}")
+    td #{colorLevelStatus.room}
+    td #{colorLevelStatus.MACaddress}
+    td
+      a(href="http://#{colorLevelStatus.IPaddress}" target="_blank") #{colorLevelStatus.IPaddress}
+    td #{colorLevelStatus.printerModel}
+    td #{colorLevelStatus.statusDate}
+    td.color-level-table-status-column
+      table.table.table-hover.color-level-table
+        - if (colorLevelStatus.colorLevelStatus) {
+          +outputColorLevelCartridgeTable(colorLevelStatus.colorLevelStatus, backgroundClass)
+        - }
+        - else {
+          +outputColorLevelStatusUnknown(colorLevelStatus.parsingStatus, colorLevelRowClass)
+        -} 
+
+
+mixin colorLevelReport(colorLevelStatuses)
+    .row
+     .col-md-12
+      table.table.table-hover
+        thead
+          tr
+            th Room
+            th MAC Address
+            th IP Address
+            th Printer Model
+            th Date
+            th Status
+        tbody
+          each colorLevelStatus in colorLevelStatuses
+            - grayBackground = ! grayBackground;
+            +outputColorLevelReportRow(colorLevelStatus, grayBackground)
+
+
+mixin criticalCartridgesReport(colorLevelStatuses)
+    .row
+     .col-md-12
+      table.table.table-hover
+        thead
+          tr
+            th Room
+            th MAC Address
+            th IP Address
+            th Printer Model
+            th Date
+            th Status
+        tbody
+          - var grayBackground = true;
+          each colorLevelStatus in colorLevelStatuses
+            - grayBackground = ! grayBackground;
+            +outputCriticalCartridgesReportRow(colorLevelStatus, grayBackground)
+
+
+mixin byTypeReport(colorLevelStatuses)
+    .row
+     .col-md-12
+      table.table.table-hover
+        thead
+          tr
+            th Room
+            th MAC Address
+            th IP Address
+            th Printer Model
+            th Date
+            th Status
+        tbody
+          - var currentType = "";
+          - var currentColor = "";
+          - var grayBackground = true;
+          each colorLevelStatus in colorLevelStatuses
+            - if (currentType !== colorLevelStatus.printerModel  ||  currentColor !== colorLevelStatus.colorLevelStatus[0].color) {
+            -   grayBackground = ! grayBackground;
+            tr
+              td(colspan="6")
+                h3.text-center #{colorLevelStatus.printerModel} #{colorLevelStatus.colorLevelStatus[0].color}
+            - }
+            - currentType = colorLevelStatus.printerModel;
+            - currentColor = colorLevelStatus.colorLevelStatus[0].color;
+            +outputByTypeRow(colorLevelStatus, grayBackground)

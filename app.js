@@ -11,7 +11,7 @@ var routes = require('./app_server/routes/index');
 
 // app_api
 require('./app_api/models/db');
-var routesApi = require('./app_api/routes/index');
+var routesApi = require('./app_api/routes/apiIndex');
 //var users = require('./app_server/routes/users');
 
 var app = express();
